@@ -22,7 +22,7 @@ For a stable factory setup, use a rigid camera mount, fixed fixture, fixed orien
 5. On **Create your first inspection profile**, enter a name such as `Seat blower - Station 1`.
 6. Click **Known-good part images**. In the file selector, select the supplied good-part photos (for this task they are in `C:\Users\sjala\Downloads\photos`). Select as many as possible. All selected images must have all eight screws and both blue clips installed.
 7. Click **Create profile and calibrate**. Training may take a minute when many photos are selected.
-8. Exit the application by deleted the tab in your browser and closing the terminal window. Then restart the program by double-clicking the **`launch.bat`** file. This opens a new usable instance of the application.
+8. Exit the application by deleting the tab in your browser and closing the terminal window. Then restart the program by double-clicking the **`launch.bat`** file. This opens a new, usable instance of the application.
 9. Open the **Layout** tab. Confirm that every orange box is centered on a screw head or blue clip. The default layout was made for the supplied assembly. If any box is off, change its Center X, Center Y, Width, or Height value, then click **Save layout and recalibrate**.
 10. Return to **Inspect a part**, upload one of the known-good images, and click **Run 10-point inspection**. It should report PASS after sufficient good images are present. The overlay makes the ID and decision at every location visible.
 
