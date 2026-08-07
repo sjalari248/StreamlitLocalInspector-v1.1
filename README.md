@@ -13,7 +13,7 @@ You need a Windows PC, a USB/web camera (or image files), and Python 3.10 or new
 
 For a stable factory setup, use a rigid camera mount, fixed fixture, fixed orientation, fixed focus/exposure, and diffuse lighting. This visual inspection cannot establish screw torque, correct screw type, electrical function, or anything hidden from the camera.
 
-## Exact first-time setup
+## First-time setup
 
 1. Put this whole `LocalQCInspector` folder somewhere you can keep it. Do not move or delete the `qc_data` folder after training; that is where the local model lives.
 2. **With Wi-Fi connected, double-click `setup_once_with_wifi.bat`.** Wait for the word `SUCCESS`. This downloads Python packages into this folder; it is the only step that needs the internet.
@@ -25,7 +25,7 @@ For a stable factory setup, use a rigid camera mount, fixed fixture, fixed orien
 8. Open the **Layout** tab. Confirm that every orange box is centered on a screw head or blue clip. The default layout was made for the supplied assembly. If any box is off, change its Center X, Center Y, Width, or Height value, then click **Save layout and recalibrate**.
 9. Return to **Inspect a part**, upload one of the known-good images, and click **Run 10-point inspection**. It should report PASS after sufficient good images are present. The overlay makes the ID and decision at every location visible.
 
-## How to use it each day
+## How to use it
 
 1. Place the part in the station fixture, with the metallic plate at the top of the camera view.
 2. In **Inspect a part**, choose **Connected camera** to take a photo from a browser-connected camera, or choose **Upload image** to inspect an image file.
@@ -61,17 +61,6 @@ Aim for at least 20–30 good images per station. Include permitted variation in
 Only group images together when the same locations are missing in every image. If one photo has Screw 1 missing and another has Screw 4 missing, add them as two separate batches. The Training Coverage table shows where labelled missing examples are still needed.
 
 The app can flag a strong difference from good images even before a defect image is available, but labelled real defect images make the missing-item decision substantially more reliable.
-
-## Verify before production use
-
-This is a usable local application, not a substitute for station acceptance testing. Before allowing it to release parts:
-
-1. Freeze the camera mount, focus, exposure, fixture, orientation, and lighting.
-2. Test a documented, held-out set: at least 30 good parts plus several images for every defect condition that will be detected.
-3. Record whether every good part was PASS and whether every intentional missing screw/clip was FAIL with the correct ID.
-4. Review all REVIEW decisions and adjust the Layout/training images if needed.
-5. Have your quality engineer set the station's acceptance rules, escalation procedure, audit retention, and revalidation trigger.
-6. Revalidate after moving the camera, changing optics, replacing lights, modifying the fixture, changing the part revision, or updating software.
 
 ## The layout coordinate fields
 
