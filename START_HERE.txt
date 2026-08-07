@@ -1,0 +1,10 @@
+LOCAL QC INSPECTOR — START HERE
+
+1. With Wi-Fi connected, double-click setup_once_with_wifi.bat and wait for SUCCESS.
+2. Disconnect Wi-Fi, then double-click launch.bat. It is the normal offline launcher.
+3. In the browser, create a profile with photos of fully assembled good parts.
+4. Open Layout and make sure all orange boxes are centered on the 8 top screws and 2 bottom blue clips.
+5. Test a good part in Inspect a part.
+6. In Training & calibration, add real photos for every missing screw/clip condition needed in production.
+
+Read README.md for the full exact instructions and factory validation checklist.
