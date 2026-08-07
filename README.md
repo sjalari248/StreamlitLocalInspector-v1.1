@@ -15,7 +15,7 @@ For a stable factory setup, use a rigid camera mount, fixed fixture, fixed orien
 
 ## First-time setup
 
-1. Put this whole `LocalQCInspector` folder somewhere you can keep it. Do not move or delete the `qc_data` folder after training; that is where the local model lives.
+1. Put this whole `LocalQCInspector` folder somewhere you can keep it (you must download all of these files into the same folder). Do not move or delete the `qc_data` folder after training; that is where the local model lives.
 2. **With Wi-Fi connected, double-click `setup_once_with_wifi.bat`.** Wait for the word `SUCCESS`. This downloads Python packages into this folder; it is the only step that needs the internet.
 3. Disconnect Wi-Fi as a deliberate test. Double-click **`launch.bat`**. This launcher never runs an installer, updater, package download, or cloud inference.
 4. Your browser should open automatically at `http://127.0.0.1:8501`. If it does not, copy that address from the command window into a browser on the same PC.
